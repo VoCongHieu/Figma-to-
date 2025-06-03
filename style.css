@@ -1,0 +1,838 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+:root {
+  --fontPoppins: "Poppins", sans-serif;
+  --fontSen: "Sen", sans-serif;
+}
+
+/*------------------------------------ Header ----------------------------------------*/
+/* ------------------------------------ Navigation Bar ---------------------------------------- */
+
+header {
+  background-color: rgb(255, 252, 245);
+  height: 900px;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding-top: 47px;
+  position: fixed;
+  z-index: 1;
+  background-color: rgb(255, 252, 245);
+  width: 100vw;
+}
+
+.container img {
+  width: 85px;
+  height: 20px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 135px;
+}
+
+.navigation-bar {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 732px;
+}
+
+.navigation-bar li a {
+  font-family: var(--fontPoppins);
+  text-decoration: none;
+  color: #171100;
+  font-weight: 200;
+}
+
+.navigation-bar li {
+  transition: 0.3s;
+}
+
+.navigation-bar li:active a {
+  font-weight: 900;
+}
+
+.navigation-bar li:active a::after {
+  content: "";
+  width: 10px;
+  height: 3px;
+  background-color: #171100;
+  display: block;
+}
+
+.navigation-bar li:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.btn-signup {
+  width: 144px;
+  height: 50px;
+  background-color: #171100;
+  text-align: center;
+  color: #ffffff;
+  font-family: var(--fontPoppins);
+  border-radius: 24.5px;
+  font-size: 16px;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.btn-signup:hover {
+  transform: scale(0.9, 0.9);
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+/* --------------------------------------------------- End Navigation Bar ----------------------------------------*/
+/* --------------------------------------------------- Hero Left ---------------------------------------- */
+
+.Introduced {
+  display: flex;
+  position: relative;
+}
+
+.imgIntroduced {
+  width: 470px;
+  height: 685px;
+  border-radius: 20px;
+  margin-left: 135px;
+  margin-top: 150px;
+}
+
+.IntroducedMenu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 270px;
+  height: 244px;
+  background-color: rgb(255, 255, 255);
+  padding-left: 2%;
+  position: absolute;
+  left: 435px;
+  top: 543px;
+  border-radius: 12px;
+}
+
+.menu {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.menu p,
+.menu strong {
+  font-family: var(--fontPoppins);
+}
+
+.menu p {
+  font-weight: 400;
+  font-size: 14px;
+  position: absolute;
+  left: 25%;
+}
+
+.menu strong {
+  font-weight: 600;
+  font-size: 18px;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+}
+/*------------------------------------------------------ End Hero left --------------------------------------------------- */
+/*------------------------------------------------------ Hero Right --------------------------------------------------- */
+.HeroRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 835px;
+  top: 214px;
+}
+
+.HeroRightHeader {
+  font-family: var(--fontSen);
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 68px;
+}
+
+.HeroRightSub {
+  font-family: var(--fontPoppins);
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.Description {
+  position: relative;
+  width: 500px;
+  height: 200px;
+}
+
+.btn-SeeCourses {
+  width: 180px;
+  height: 64px;
+  border-radius: 32px;
+  background-color: rgb(255, 183, 0);
+  font-family: var(--fontPoppins);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  border: 0px solid rgb(255, 183, 0);
+  color: white;
+  position: absolute;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.btn-SeeCourses:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  cursor: pointer;
+}
+
+.fa-circle-play {
+  color: rgb(255, 187, 0);
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.StrWatch {
+  font-family: var(--fontPoppins);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  position: absolute;
+  left: 46%;
+  top: 7%;
+  margin-top: 20px;
+}
+
+.recent-engage {
+  font-family: var(--fontPoppins);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  position: absolute;
+  top: 60%;
+  color: #5f5b53;
+  margin-top: 20px;
+}
+
+.h1Description {
+  font-family: var(--fontSen);
+  font-weight: 700;
+  line-height: 54px;
+  font-size: 44px;
+  position: absolute;
+}
+
+.pDescription {
+  font-family: var(--fontPoppins);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgb(94, 90, 82);
+  position: absolute;
+}
+
+.hdes1,
+.hdes2 {
+  margin-top: 170px;
+}
+
+.hdes2 {
+  position: absolute;
+  left: 250px;
+}
+
+.pdes1,
+.pdes2 {
+  position: absolute;
+  left: 90px;
+  top: 16px;
+}
+
+/*------------------------------------------------------ EndHero Right --------------------------------------------------- */
+/*------------------------------------ Body ----------------------------------------*/
+.popularCourse {
+  width: 1170px;
+  height: 645px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Part1 {
+  width: 458px;
+  height: 124px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Part1 h1 {
+  font-family: var(--fontSen);
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  color: #171100;
+}
+
+.popularSub {
+  font-family: var(--fontPoppins);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #5f5b53;
+}
+
+.containerPopular {
+  width: 370px;
+  height: 466px;
+  border-radius: 12px;
+  border: 1px solid rgb(237, 236, 232);
+  position: relative;
+}
+
+.ContainerTotal {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+
+.TitlePopular {
+  font-family: var(--fontPoppins);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #171100;
+  margin-left: 20px;
+}
+
+.subPopular {
+  font-family: var(--fontPoppins);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #5f5b53;
+  margin-left: 20px;
+  display: inline-block;
+  width: 326px;
+}
+
+.rating-text {
+  margin-left: 20px;
+  font-family: var(--fontPoppins);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fea31b;
+  position: absolute;
+  top: 283px;
+  left: 270px;
+}
+
+.PricePopular {
+  margin-left: 20px;
+  font-family: var(--fontPoppins);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #171100;
+  position: absolute;
+  top: 390px;
+}
+
+.btn-book {
+  width: 118px;
+  height: 50px;
+  background-color: #171100;
+  color: white;
+  border-radius: 25px;
+  font-family: var(--fontPoppins);
+  font-family: 600;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  position: absolute;
+  left: 220px;
+  top: 380px;
+  transition: 0.3s;
+  border: 0px solid #ffb900;
+}
+
+.btn-book:hover {
+  cursor: pointer;
+  background-color: #ffb900;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+/*------------------------------------ End Body ----------------------------------------*/
+/*------------------------------------ Container Testimonial ----------------------------------------*/
+.ContainerTestimonial {
+  width: 100vw;
+  height: 380px;
+  background-color: #2e2100;
+  display: flex;
+  align-items: center;
+}
+
+.groupStudent {
+  width: 159px;
+  height: 188px;
+  margin-left: 135px;
+}
+
+.groupStudent h2 {
+  font-family: var(--fontSen);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  color: #f7f7f7;
+}
+
+.groupStudent p {
+  font-family: var(--fontPoppins);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #bfbcb2;
+}
+
+.grouptestimonialRight {
+  width: 800px;
+  height: 180px;
+  position: relative;
+  right: -400px;
+}
+
+.grouptestimonialRight h1,
+.grouptestimonialRight p {
+  color: #ffffff;
+}
+
+.grouptestimonialRight h1 {
+  color: #634700;
+  font-family: var(--fontPoppins);
+  font-weight: 700;
+  font-size: 100px;
+}
+
+.grouptestimonialRight p {
+  font-family: var(--fontPoppins);
+  font-family: 400;
+  font-style: italic;
+  font-size: 26px;
+  line-height: 40px;
+  color: #ffffff;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+/*------------------------------------ End Container Testimonial ----------------------------------------*/
+/*------------------------------------ Features ----------------------------------------*/
+.ContainerImgFeatures {
+  display: flex;
+  width: 570px;
+  height: 438px;
+  justify-content: space-between;
+  margin-left: 135px;
+  margin-top: 200px;
+}
+
+.ImgFeatures {
+  width: 270px;
+  height: 405px;
+  border-radius: 16px;
+}
+
+.ImgFeatures1 {
+  margin-top: 35px;
+}
+
+.TextFeatures {
+  width: 470px;
+  height: 322px;
+  float: right;
+  margin-top: -400px;
+  margin-right: 250px;
+}
+
+.titleFeatures {
+  font-family: var(--fontSen);
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 48px;
+  letter-spacing: -2%;
+  color: #171100;
+}
+
+.SubFeatures {
+  font-family: var(--fontPoppins);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #5f5b53;
+  margin-top: 20px;
+}
+
+.btnFeatures {
+  width: 137px;
+  height: 50px;
+  border-radius: 28px;
+  background-color: #ffb900;
+  border: 0px;
+  font-family: var(--fontPoppins);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-left: 0px;
+}
+/*------------------------------------ End Features ----------------------------------------*/
+/*------------------------------------ CTA ----------------------------------------*/
+.ContainerCTA {
+  width: 1170px;
+  height: 440px;
+  margin: 0 auto;
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ContainerTextCTA {
+  width: 570px;
+  height: 298px;
+}
+
+.ContainerTextCTA h1 {
+  font-family: var(--fontSen);
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  color: #171100;
+}
+
+.ContainerTextCTA p {
+  font-family: var(--fontPoppins);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #5f5b53;
+}
+
+.btn-join {
+  width: 137px;
+  height: 50px;
+  border-radius: 28px;
+  background-color: #ffb900;
+  border: 0px;
+  font-family: var(--fontPoppins);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-left: 0px;
+}
+
+.ContainerCTA img {
+  width: 470px;
+  height: 440px;
+  border-radius: 20px;
+  margin-right: 0px;
+}
+/*------------------------------------ End CTA ----------------------------------------*/
+/*------------------------------------ Blog ----------------------------------------*/
+.ContainerBlog {
+  width: 100vw;
+  height: 878px;
+  background-color: #fffcf4;
+  margin-top: 200px;
+}
+
+.ContainerTextBlog {
+  width: 448px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.ContainerTextBlog h1 {
+  font-family: var(--fontSen);
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: -2%;
+  text-align: center;
+  color: #130606;
+  margin: 0 auto;
+}
+
+.ContainerTextBlog p {
+  font-family: var(--fontPoppins);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #696262;
+}
+
+.ContainerCard {
+  width: 1170px;
+  height: 467px;
+  margin: 0 auto;
+  margin-top: 170px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.Card {
+  width: 370px;
+  height: 467px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.imgCard {
+  width: 370px;
+  height: 250px;
+}
+
+.ContainerTextCard {
+  width: 330px;
+  height: 169px;
+  margin-left: 20px;
+}
+
+.ContainerTextCard p {
+  font-family: var(--fontPoppins);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #5f5b53;
+  margin-top: 20px;
+}
+
+.fa-circle-dot {
+  width: 3px;
+  height: 3px;
+  color: #ffb900;
+  margin-right: 15px;
+}
+
+.ContainerTextCard h4 {
+  font-family: var(--fontPoppins);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #171100;
+  margin-top: 20px;
+}
+
+.btnCard {
+  background-color: #130606;
+  transition: 0.3s;
+}
+
+.btnCard:hover {
+  transform: scale(0.9, 0.9);
+  background-color: #ffb900;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  cursor: pointer;
+}
+/*------------------------------------ End blog ----------------------------------------*/
+/*------------------------------------ Footer ----------------------------------------*/
+.Footer {
+  width: 100vw;
+  height: 440px;
+  background-color: #2e2100;
+  display: flex;
+  align-items: flex-end;
+}
+
+.GroupFooter {
+  width: 1300px;
+  height: 350px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Community {
+  width: 267px;
+  height: 163px;
+}
+
+.Community a img {
+  width: 85px;
+  height: 34px;
+}
+
+.Community p {
+  font-family: var(--fontPoppins);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #bfbcb2;
+}
+
+.CommunityApp {
+  width: 111px;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-brands {
+  width: 18px;
+  height: 15px;
+  color: white;
+}
+
+.Company,
+.Support {
+  width: 150px;
+  height: 211px;
+}
+
+.Address {
+  width: 231px;
+  height: 199px;
+}
+
+.Company h1,
+.Support h1,
+.Address h1 {
+  font-family: var(--fontPoppins);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+}
+
+.ContentCompany {
+  display: block;
+}
+
+.ContentSupport {
+  display: block;
+}
+
+.ContentCompany a,
+.ContentSupport a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 12px; /* Khoảng cách giữa các dòng */
+  font-family: var(--fontPoppins);
+  font-size: 14px;
+}
+
+.ContentCompany,
+.ContentSupport {
+  margin-top: 10px;
+}
+
+.ContentAddress p {
+  color: white;
+  font-family: var(--fontPoppins);
+  font-size: 14px;
+  margin-bottom: 12px; /* Khoảng cách giữa các dòng */
+}
+
+.Company hr,
+.Support hr,
+.Address hr,
+.ContentCompany,
+.ContentSupport,
+.ContentAddress {
+  margin-top: 20px;
+}
+
+.ContentCompany a,
+.ContentSupport a,
+.ContentAddress p {
+  font-family: var(--fontPoppins);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #bfbcb2;
+}
+
+.ContentAddress p strong {
+  font-family: var(--fontPoppins);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  color: white;
+}
+
+.Copyright {
+  width: 100vw;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -100px;
+  background-color: #2e2100;
+}
+
+.Copyright p {
+  font-family: var(--fontPoppins);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #807d74;
+  margin-top: 30px;
+}
+
+.Copyright hr {
+  color: #59554b;
+  width: 1170px;
+}
+
+/*------------------------------------ End Footer ----------------------------------------*/
